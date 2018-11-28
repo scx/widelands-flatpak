@@ -44,11 +44,11 @@ See also:
 ### Prepare
 
 ```
-$ flatpak install flathub org.freedesktop.Sdk//18.08
+$ flatpak install flathub "org.freedesktop.Sdk//18.08"
 ```
 
 ```
-$ flatpak install flathub org.freedesktop.Platform//18.08
+$ flatpak install flathub "org.freedesktop.Platform//18.08"
 ```
 
 ```
@@ -62,7 +62,7 @@ $ git submodule update
 ### Build
 
 ```
-$ mkdir -p build && flatpak-builder "build" "org.widelands.widelands.yaml" --force-clean --install-deps-from="flathub"
+$ mkdir -p "build" && flatpak-builder "build" "org.widelands.widelands.yaml" --force-clean --install-deps-from="flathub"
 ```
 
 ### Test
@@ -71,10 +71,40 @@ $ mkdir -p build && flatpak-builder "build" "org.widelands.widelands.yaml" --for
 $ flatpak-builder --run "build" "org.widelands.widelands.yaml" "sh"
 ```
 
-### Run
+### Test run
 
 ```
 $ flatpak-builder --run "build" "org.widelands.widelands.yaml" "widelands"
+```
+
+### Install
+
+```
+$ flatpak-builder --repo="repo" --force-clean "build" "org.widelands.widelands.yaml"
+```
+
+```
+$ flatpak --user remote-add --no-gpg-verify "widelands" "repo"
+```
+
+```
+$ flatpak --user install "widelands" "org.widelands.widelands"
+```
+
+### Run
+
+```
+$ flatpak run "org.widelands.widelands"
+```
+
+### Uninstall
+
+```
+$ flatpak --user uninstall "org.widelands.widelands"
+```
+
+```
+$ flatpak --user remote-delete "widelands"
 ```
 
 See also: [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-build.html)
