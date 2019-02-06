@@ -119,7 +119,7 @@ No, it is completely sandboxed.
 
 [No](https://github.com/flatpak/flatpak/issues/1557). It is a [MATE](https://github.com/mate-desktop)/[marco](https://github.com/mate-desktop/marco) [issue](https://github.com/mate-desktop/marco/issues/301).
 
-### Why not use an RPM package?
+### Why not a RPM package?
 
 I already provided [COPR repo](https://copr.fedorainfracloud.org/coprs/scx/widelands) with (S)RPM packages for EL and Fedora.
 
