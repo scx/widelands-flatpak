@@ -62,25 +62,25 @@ $ git submodule update
 ### Build
 
 ```
-$ flatpak-builder "build" "org.widelands.widelands.yaml" --force-clean --install-deps-from="flathub"
+$ flatpak-builder "build" "org.widelands.Widelands.yaml" --force-clean --install-deps-from="flathub"
 ```
 
 ### Test
 
 ```
-$ flatpak-builder --run "build" "org.widelands.widelands.yaml" "sh"
+$ flatpak-builder --run "build" "org.widelands.Widelands.yaml" "sh"
 ```
 
 ### Test run
 
 ```
-$ flatpak-builder --run "build" "org.widelands.widelands.yaml" "widelands"
+$ flatpak-builder --run "build" "org.widelands.Widelands.yaml" "widelands"
 ```
 
 ### Install
 
 ```
-$ flatpak-builder --repo="repo" --force-clean "build" "org.widelands.widelands.yaml"
+$ flatpak-builder --repo="repo" --force-clean "build" "org.widelands.Widelands.yaml"
 ```
 
 ```
@@ -88,19 +88,19 @@ $ flatpak --user remote-add --no-gpg-verify "widelands" "repo"
 ```
 
 ```
-$ flatpak --user install "widelands" "org.widelands.widelands"
+$ flatpak --user install "widelands" "org.widelands.Widelands"
 ```
 
 ### Run
 
 ```
-$ flatpak run "org.widelands.widelands"
+$ flatpak run "org.widelands.Widelands"
 ```
 
 ### Uninstall
 
 ```
-$ flatpak --user uninstall "org.widelands.widelands"
+$ flatpak --user uninstall "org.widelands.Widelands"
 ```
 
 ```
