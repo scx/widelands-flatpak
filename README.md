@@ -51,6 +51,8 @@ $ flatpak install "flathub" "org.freedesktop.Sdk//18.08"
 $ flatpak install "flathub" "org.freedesktop.Platform//18.08"
 ```
 
+Clone this repository, then checkout the right branch.
+
 ```
 $ git submodule init
 ```
@@ -77,11 +79,13 @@ $ flatpak-builder --run "build" "org.widelands.Widelands.yaml" "sh"
 $ flatpak-builder --run "build" "org.widelands.Widelands.yaml" "widelands"
 ```
 
-### Install
+### Create repo
 
 ```
 $ flatpak-builder --repo="repo" --force-clean "build" "org.widelands.Widelands.yaml"
 ```
+
+### Install
 
 ```
 $ flatpak --user remote-add --no-gpg-verify "widelands" "repo"
@@ -107,7 +111,23 @@ $ flatpak --user uninstall "org.widelands.Widelands"
 $ flatpak --user remote-delete "widelands"
 ```
 
-See also: [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-build.html)
+### Build single-file bundle
+
+```
+$ flatpak build-bundle "repo" "widelands.flatpak" "org.widelands.Widelands" --runtime-repo="https://flathub.org/repo/flathub.flatpakrepo"
+```
+
+### Install single-file bundle
+
+If you have already [installed](#install) the package, you have to [uninstall](#uninstall) it before continuing.
+
+```
+$ flatpak --user install "widelands.flatpak"
+```
+
+See also:
+* [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-build.html)
+* [Single-file bundles](http://docs.flatpak.org/en/latest/single-file-bundles.html#single-file-bundles)
 
 ## FAQ
 
