@@ -20,6 +20,7 @@ modules:
   - shared-modules/glu/glu-9.0.0.json
   - shared-modules/glew/glew.json
   - boost.yaml
+  - xmlstarlet.yaml
   - Widelands.yaml
 cleanup:
   - /include
