@@ -16,11 +16,6 @@ finish-args:
   # OpenGL access
   - --device=dri
 modules:
-  - shared-modules/lua5.3/lua-5.3.5.json
-  - shared-modules/glu/glu-9.0.0.json
-  - shared-modules/glew/glew.json
-  - boost.yaml
-  - xmlstarlet.yaml
   - Widelands.yaml
 cleanup:
   - /include

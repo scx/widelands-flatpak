@@ -52,3 +52,9 @@ post-install:
     done;
   - install -p -D -m 0644 "../debian/org.widelands.widelands.desktop" "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop";
   - install -p -D -m 0644 "../debian/widelands.appdata.xml" "${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.appdata.xml";
+modules:
+  - shared-modules/lua5.3/lua-5.3.5.json
+  - shared-modules/glu/glu-9.json
+  - shared-modules/glew/glew.json
+  - boost.yaml
+  - xmlstarlet.yaml

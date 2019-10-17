@@ -6,7 +6,7 @@ config-opts:
 sources:
   # Source0
   - type: archive
-    url: http://downloads.sourceforge.net/xmlstar/xmlstarlet-1.6.1.tar.gz
+    url: https://downloads.sourceforge.net/xmlstar/xmlstarlet-1.6.1.tar.gz
     sha256: 15d838c4f3375332fd95554619179b69e4ec91418a3a5296e7c631b7ed19e7ca
   - type: shell
     commands:

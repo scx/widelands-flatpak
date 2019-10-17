@@ -2,12 +2,14 @@ name: boost
 buildsystem: simple
 sources:
   # Source0
+  # Boost >= 1.70 is not supported yet
+  # https://www.widelands.org/forum/topic/4513/?page=1#post-27901
+  # wl_include_system_directories Function invoked with incorrect arguments for function named: wl_include_system_directories
   - type: archive
-    url: https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2
-    sha256: 7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7
+    url: https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.bz2
+    sha256: 8f32d4617390d1c2d16f26a27ab60d97807b35440d45891fa340fc2648b04406
 build-commands:
-  - ./bootstrap.sh --prefix="${FLATPAK_DEST}" --with-libraries=filesystem,system,signals,regex,test;
-  - ./b2 headers;
-  - ./b2 install;
-cleanup:
-  - /include
+  - ./bootstrap.sh --prefix="${FLATPAK_DEST}" --with-libraries=system,regex,test;
+  - ./b2 -j"${FLATPAK_BUILDER_N_JOBS}" install;
+post-install:
+  - install -p -D -m 0644 "LICENSE_1_0.txt" -t "${FLATPAK_DEST}/share/licenses/boost/";
