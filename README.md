@@ -44,11 +44,11 @@ See also:
 ### Prepare
 
 ```
-$ flatpak install "flathub" "org.freedesktop.Sdk//18.08"
+$ flatpak install "flathub" "org.freedesktop.Sdk//19.08"
 ```
 
 ```
-$ flatpak install "flathub" "org.freedesktop.Platform//18.08"
+$ flatpak install "flathub" "org.freedesktop.Platform//19.08"
 ```
 
 Clone this repository, then checkout the right branch.
