@@ -53,5 +53,6 @@ modules:
   - shared-modules/lua5.3/lua-5.3.5.json
   - shared-modules/glu/glu-9.json
   - shared-modules/glew/glew.json
+  - shared-modules/python2.7/python-2.7.json
   - boost.yaml
   - xmlstarlet.yaml

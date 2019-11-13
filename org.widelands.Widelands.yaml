@@ -17,8 +17,14 @@ finish-args:
 modules:
   - Widelands.yaml
 cleanup:
+  - /bin/pip*
+  - /bin/python*
+  - /bin/smtpd.py
   - /include
+  - /lib/debug/source/python*
+  - /lib/libpython*
   - /lib/pkgconfig
+  - /lib/python*
   - /share/man
   - '*.la'
   - '*.a'
