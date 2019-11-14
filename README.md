@@ -88,11 +88,11 @@ $ flatpak-builder --repo="repo" --force-clean "build" "org.widelands.Widelands.y
 ### Install
 
 ```
-$ flatpak --user remote-add --no-gpg-verify "widelands" "repo"
+$ flatpak --user remote-add --no-gpg-verify "widelands-git" "repo"
 ```
 
 ```
-$ flatpak --user install "widelands" "org.widelands.Widelands"
+$ flatpak --user install "widelands-git" "org.widelands.Widelands"
 ```
 
 ### Run
@@ -108,7 +108,7 @@ $ flatpak --user uninstall "org.widelands.Widelands"
 ```
 
 ```
-$ flatpak --user remote-delete "widelands"
+$ flatpak --user remote-delete "widelands-git"
 ```
 
 ### Build single-file bundle
