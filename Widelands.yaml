@@ -19,7 +19,7 @@ sources:
   # Source0
   - type: git
     url: https://github.com/widelands/widelands.git
-    commit: a74a71714221894f19acc451d8fa37c01020e9b4
+    commit: e745788804b90e2bb6f98ddf6f934089f3250aa9
     # Need full git history to generate revision number
     disable-shallow-clone: true
   # https://github.com/widelands/widelands/issues/3558
