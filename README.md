@@ -4,7 +4,7 @@
 
 ![widelands-flatpak screenshot](widelands-flatpak.png)
 
-[Homepage](https://wl.widelands.org)
+[Homepage](https://www.widelands.org)
 
 This repo is about the flatpak package.
 
@@ -44,11 +44,11 @@ See also:
 ### Prepare
 
 ```
-$ flatpak install "flathub" "org.freedesktop.Sdk//19.08"
+$ flatpak --user install "flathub" "org.freedesktop.Sdk//19.08"
 ```
 
 ```
-$ flatpak install "flathub" "org.freedesktop.Platform//19.08"
+$ flatpak --user install "flathub" "org.freedesktop.Platform//19.08"
 ```
 
 Clone this repository, then checkout the right branch.
@@ -98,7 +98,7 @@ $ flatpak --user install "widelands" "org.widelands.Widelands"
 ### Run
 
 ```
-$ flatpak run "org.widelands.Widelands"
+$ flatpak --user run "org.widelands.Widelands"
 ```
 
 ### Uninstall
@@ -126,6 +126,7 @@ $ flatpak --user install "widelands.flatpak"
 ```
 
 See also:
+
 * [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-build.html)
 * [Single-file bundles](http://docs.flatpak.org/en/latest/single-file-bundles.html#single-file-bundles)
 
@@ -149,5 +150,5 @@ No, I only created the flatpak package for it.
 
 See also:
 
-* [Widelands Development Team](https://wl.widelands.org/developers)
+* [GitHub repo](https://github.com/widelands/widelands)
 
