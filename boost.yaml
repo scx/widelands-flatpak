@@ -1,7 +1,6 @@
 name: boost
 buildsystem: simple
 sources:
-  # Source0
   # Boost >= 1.70 is not supported yet
   # https://www.widelands.org/forum/topic/4513/?page=1#post-27901
   # wl_include_system_directories Function invoked with incorrect arguments for function named: wl_include_system_directories
