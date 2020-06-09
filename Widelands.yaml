@@ -19,7 +19,7 @@ build-options:
 sources:
   - type: git
     url: https://github.com/widelands/widelands.git
-    commit: 7747702abc474351e587d70fb60b3be7880cf214
+    commit: edec161fb23c2a6bf94461f9635052c4f5a5eb5d
     # Need full git history to generate revision number
     disable-shallow-clone: true
   # Generate a new version number with the git revision
